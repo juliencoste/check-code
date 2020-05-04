@@ -1,5 +1,5 @@
 FROM ubuntu
-MAINTAINER Gregoire Daure
+MAINTAINER julien
 RUN apt-get update
 RUN apt-get install -y nginx
 COPY ./battleboat/ /var/www/html
