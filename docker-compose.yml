@@ -1,7 +1,7 @@
 version: '2'
 services:
   battle281003:
-    image: fake-backend:latest
+    image: dockjulien/fake-backend:lasted
     ports:
       - "80:3000"
     links:
