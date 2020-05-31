@@ -1,5 +1,5 @@
 # Fake Backend
-
+[![Build Status](http://ec2-34-238-166-33.compute-1.amazonaws.com/buildStatus/icon?job=fake-backend-ci)](http://ec2-34-238-166-33.compute-1.amazonaws.com/job/fake-backend-ci/)
 ## Project description
 
 This project is a fake backend used for educational purpose.
