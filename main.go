@@ -1,6 +1,6 @@
 package main
 
-import (
+mport (
 	"database/sql"
 	"fmt"
 	"log"
