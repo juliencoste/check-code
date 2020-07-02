@@ -5,7 +5,7 @@ pipeline {
     agent none
     stages {
         stage('test golang') {
-            agent { docker { image 'golangci-lint:latest' } }
+            agent { docker { image 'golangci/golangci-lint:latest' } }
             steps {
                 script { checkgolang }
             }
