@@ -3,7 +3,8 @@
 
 pipeline {
     agent none
-    stage('test golang') {
+    stages {
+        stage('test golang') {
             agent { docker { image 'golang:1.13' } }
             environment {
                 XDG_CACHE_HOME='/tmp/.cache'
@@ -34,5 +35,6 @@ pipeline {
          clean
          slackNotifier currentBuild.result
      }
+    }
     }
     }
