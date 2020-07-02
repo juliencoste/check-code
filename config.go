@@ -7,7 +7,7 @@ import (
 	"github.com/kelseyhightower/envconfig"
 )
 
-type config struct 
+type config struct {
 	StaticPath       string `default:"/etc/backend/static" envconfig:"STATIC_PATH"`
 	DatabaseHost     string `default:"db" envconfig:"DATABASE_HOST"`
 	DatabasePort     int    `default:"3306" envconfig:"DATABASE_PORT"`
