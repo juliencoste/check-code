@@ -5,7 +5,7 @@ pipeline {
     agent none
     stages {
         stage('test golang') {
-            agent { docker { image 'golang:1.13' } }
+            agent { docker { image 'golang:latest' } }
             environment {
                 XDG_CACHE_HOME='/tmp/.cache'
                 GOOS='linux'
