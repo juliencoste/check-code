@@ -37,4 +37,4 @@ func (c *config) getFromEnv() error {
 		return err
 	}
 	return nil
-
+}
