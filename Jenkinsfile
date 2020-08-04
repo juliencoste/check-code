@@ -19,7 +19,8 @@ pipeline {
         stage('Check Dockerfile syntax') {
             agent { docker { image 'hadolint/hadolint' } }
             steps {
-                sh 'hadolint --ignore DL3006 --ignore DL3022 \${WORKSPACE}/Dockerfile'
+                sh 'hadolint --ignore DL3006 --ignore DL3022 \${WORKSPACE}/bulletin-board-app/Dockerfile'
+                sh 'hadolint --ignore DL3006 --ignore DL3022 \${WORKSPACE}/bulletin-board-db/Dockerfile'
             }
         }
     }
