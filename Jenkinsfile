@@ -5,7 +5,7 @@ pipeline {
     agent none
     stages {
         stage('test JS') {
-            agent { docker { image 'cytopia/eslint:latest' } }
+            agent none
             steps {
                 script { checkjs }
             }
