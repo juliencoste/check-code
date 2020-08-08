@@ -4,10 +4,10 @@
 pipeline {
     agent none
     stages {
-        stage('test golang') {
-            agent { docker { image 'golangci/golangci-lint:latest' } }
+        stage('test JS') {
+            agent { docker { image 'cytopia/eslint:latest' } }
             steps {
-                script { checkgolang }
+                script { checkjs }
             }
         }
         stage('Check docker-compose syntax') {
